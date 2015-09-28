@@ -22,35 +22,30 @@
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:id="@+id/RP1"
-            android:onClick="viewStats" />
+            android:id="@+id/RP1" />
 
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:id="@+id/RP2"
-            android:onClick="viewStats"
             android:layout_gravity="center_horizontal" />
 
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:id="@+id/RP3"
-            android:onClick="viewStats"
             android:focusableInTouchMode="false" />
 
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:id="@+id/RP4"
-            android:onClick="viewStats"
             android:layout_gravity="center_horizontal" />
 
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:id="@+id/RP5"
-            android:onClick="viewStats" />
+            android:id="@+id/RP5" />
     </LinearLayout>
 
     <LinearLayout
@@ -67,35 +62,30 @@
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:id="@+id/LP1"
-            android:onClick="viewStats"
             android:layout_gravity="right" />
 
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:id="@+id/LP2"
-            android:onClick="viewStats"
             android:layout_gravity="center_horizontal" />
 
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:id="@+id/LP3"
-            android:onClick="viewStats"
             android:layout_gravity="right" />
 
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:id="@+id/LP4"
-            android:onClick="viewStats"
             android:layout_gravity="center_horizontal" />
 
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:id="@+id/LP5"
-            android:onClick="viewStats"
             android:layout_gravity="right" />
     </LinearLayout>
 
