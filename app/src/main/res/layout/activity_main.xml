@@ -181,7 +181,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Click on Team to show players -->"
         android:id="@+id/stats"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/teamImage"
         android:layout_toLeftOf="@+id/scrollView2"
         android:layout_toStartOf="@+id/scrollView2" />
 
@@ -389,5 +389,15 @@
         android:textSize="25dp"
         android:onClick="startGame"
         android:nestedScrollingEnabled="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/teamImage"
+        android:layout_toEndOf="@+id/scrollView"
+        android:layout_below="@+id/createPlayer"
+        android:layout_alignLeft="@+id/stats"
+        android:layout_alignStart="@+id/stats"
+        android:contentDescription="desc" />
 
 </RelativeLayout>

@@ -36,6 +36,81 @@
             android:layout_weight="0.08"
             android:textSize="25dp" />
 
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/horizontalScrollView3"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.08" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/TI1"
+                    android:onClick="createFinalTeam" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/TI2"
+                    android:onClick="createFinalTeam" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/TI3"
+                    android:onClick="createFinalTeam" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/TI4"
+                    android:onClick="createFinalTeam" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/TI5"
+                    android:onClick="createFinalTeam" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/TI6"
+                    android:onClick="createFinalTeam" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/TI7"
+                    android:onClick="createFinalTeam" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/TI8"
+                    android:onClick="createFinalTeam" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/TI9"
+                    android:onClick="createFinalTeam" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/TI10"
+                    android:onClick="createFinalTeam" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
     </LinearLayout>
 
     <Button

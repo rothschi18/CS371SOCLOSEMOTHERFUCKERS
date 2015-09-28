@@ -102,6 +102,13 @@
                 android:id="@+id/team14Button"
                 android:onClick="pickTeam"/>
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="team15Button"
+                android:id="@+id/team15Button"
+                android:onClick="pickTeam" />
+
         </LinearLayout>
     </HorizontalScrollView>
 

@@ -160,14 +160,14 @@ public class TeamRosterDatabase {
 
 
 
-        TeamRoster team2 = new TeamRoster("TeamTwo", view2);
+        TeamRoster team2 = new TeamRoster("TeamTwo", R.mipmap.america);
         team2.addPlayer(player1);
         team2.addPlayer(player3);
         team2.addPlayer(player7);
         team2.addPlayer(player4);
         team2.addPlayer(player6);
 
-        TeamRoster team1 = new TeamRoster("TeamOne", view1);
+        TeamRoster team1 = new TeamRoster("TeamOne", R.mipmap.batman);
         team1.addPlayer(player5);
         team1.addPlayer(player2);
         team1.addPlayer(player8);

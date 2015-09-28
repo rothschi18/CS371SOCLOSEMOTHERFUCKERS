@@ -33,6 +33,7 @@ public class PickTeams extends ActionBarActivity {
         teamList[11] = (Button)this.findViewById(R.id.team12Button);
         teamList[12] = (Button)this.findViewById(R.id.team13Button);
         teamList[13] = (Button)this.findViewById(R.id.team14Button);
+        teamList[14] = (Button)this.findViewById(R.id.team15Button);
         MainActivity.TeamData.viewTeams(this, teamList);
     }
 

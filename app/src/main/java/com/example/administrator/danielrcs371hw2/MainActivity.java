@@ -34,6 +34,7 @@ public class MainActivity extends ActionBarActivity {
     public LinkedHashMap<TeamRoster, Button> mainTeamButtons;
     HashMap<ImageButton, String> PlayerImages;
     public static String newTeam;
+    public static ImageView teamImage;
     protected void onCreate(Bundle savedInstanceState) {
         /*
         EditText newText = (EditText)findViewById(R.id.editText);
@@ -93,6 +94,9 @@ public class MainActivity extends ActionBarActivity {
         playerButtons[14] = (ImageButton)this.findViewById(R.id.player15);
 
 
+        teamImage = (ImageView)this.findViewById(R.id.teamImage);
+
+
 
 
 
@@ -134,7 +138,7 @@ public class MainActivity extends ActionBarActivity {
     public void sendButtonID(View view)
     {
         team = TeamData.getTeamRoster((Button)view);
-
+        teamImage.setBackgroundResource(team.resource);
         if(team==null)
             return;
 

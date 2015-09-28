@@ -28,8 +28,8 @@ public class PickPlayers extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pick_players);
 
-        TeamRoster1 = new TeamRoster(PickTeams.teamsToPlayGame[0].teamName, PickTeams.teamsToPlayGame[0].teamImage);
-        TeamRoster2 = new TeamRoster(PickTeams.teamsToPlayGame[1].teamName, PickTeams.teamsToPlayGame[1].teamImage);
+        TeamRoster1 = new TeamRoster(PickTeams.teamsToPlayGame[0].teamName, PickTeams.teamsToPlayGame[0].resource);
+        TeamRoster2 = new TeamRoster(PickTeams.teamsToPlayGame[1].teamName, PickTeams.teamsToPlayGame[1].resource);
 
         team1B = new Button[15];
         team2B = new Button[15];

@@ -20,12 +20,14 @@ public class TeamRoster {
     protected HashMap<String, PlayerStats> teamPlayers;
     protected String teamName;
     protected ImageView teamImage;
+    protected Integer resource;
     // protected HashMap<ImageButton, PlayerStats> Team;
 
-    public TeamRoster(String teamName, ImageView teamImage)
+    public TeamRoster(String teamName, Integer resource)
     {
         this.teamName=teamName;
-        this.teamImage = teamImage;
+
+        this.resource=resource;
         teamPlayers = new HashMap<String, PlayerStats>();
 
     }
