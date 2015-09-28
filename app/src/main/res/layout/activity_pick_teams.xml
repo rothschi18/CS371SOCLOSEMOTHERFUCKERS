@@ -141,4 +141,13 @@
         android:layout_above="@+id/horizontalScrollView"
         android:layout_centerHorizontal="true"
         android:onClick="backToMain" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team Size Must Be 5!!"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/pickTeams"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp" />
 </RelativeLayout>

@@ -32,11 +32,24 @@ public class TeamRoster {
 
     }
 
+    public TeamRoster(){}
+
     public void incrementWins()
     {
         for(String key: teamPlayers.keySet())
         {
             teamPlayers.get(key).setGamesWon(1);
+        }
+    }
+
+    public void incrementGoals()
+    {
+        int counter = 4;
+        for(String key: teamPlayers.keySet())
+        {
+            teamPlayers.get(key).incrementGoals(counter%2);
+            counter++;
+
         }
     }
 

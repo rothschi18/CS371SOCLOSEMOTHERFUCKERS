@@ -18,7 +18,7 @@ public class PickTeams extends ActionBarActivity {
         setContentView(R.layout.activity_pick_teams);
         counter = 0;
         teamsToPlayGame = new TeamRoster[2];
-        Button[] teamList = new Button[14];
+        Button[] teamList = new Button[15];
         teamList[0] = (Button)this.findViewById(R.id.team1Button);
         teamList[1] = (Button)this.findViewById(R.id.team2Button);
         teamList[2] = (Button)this.findViewById(R.id.team3Button);

@@ -13,12 +13,13 @@ import android.widget.ImageButton;
 
 public class Game extends ActionBarActivity {
 
-    @Override
+    public static TeamRoster winTeam;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
         ImageButton[] currentPlayersRight = new ImageButton[5];
         ImageButton[] currentPlayersLeft = new ImageButton[5];
+        winTeam = new TeamRoster();
         //initialize first array of buttons
         currentPlayersLeft[0] = (ImageButton)this.findViewById(R.id.LP1);
         currentPlayersLeft[1] = (ImageButton)this.findViewById(R.id.LP2);
@@ -76,16 +77,34 @@ public class Game extends ActionBarActivity {
             if(PickTeams.teamsToPlayGame[0].teamPlayers.size()>PickTeams.teamsToPlayGame[1].teamPlayers.size())
             {
                 PickTeams.teamsToPlayGame[0].incrementWins();
+                winTeam=PickTeams.teamsToPlayGame[0];
+                PickTeams.teamsToPlayGame[0].incrementGoals();
+
+
             }
-            else
+            else {
                 PickTeams.teamsToPlayGame[1].incrementWins();
+                winTeam=PickTeams.teamsToPlayGame[1];
+                PickTeams.teamsToPlayGame[1].incrementGoals();
+            }
         }
 
-        if(strTeamOne>strTeamTwo)
+        if(strTeamOne>strTeamTwo) {
             PickTeams.teamsToPlayGame[0].incrementWins();
+            winTeam=PickTeams.teamsToPlayGame[0];
+            PickTeams.teamsToPlayGame[0].incrementGoals();
+        }
 
-        else
+        else {
             PickTeams.teamsToPlayGame[1].incrementWins();
+            winTeam=PickTeams.teamsToPlayGame[1];
+            PickTeams.teamsToPlayGame[1].incrementGoals();
+        }
+
+
+        Intent intent = new Intent(this, WINNINGPAGE.class);
+        startActivity(intent);
+        finish();
     }
 
     @Override

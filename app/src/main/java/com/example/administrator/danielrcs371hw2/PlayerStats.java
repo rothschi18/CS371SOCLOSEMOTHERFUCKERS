@@ -59,5 +59,6 @@ public class PlayerStats {
 
     public void setGamesWon(int gamesWon){this.gamesWon+=gamesWon;}
     public void setStrengthFactor(int strengthFactor){this.strengthFactor=strengthFactor;}
+    public void incrementGoals(int goalsScored){this.goalsScored+=goalsScored;}
 
 }

@@ -1,9 +1,14 @@
 package com.example.administrator.danielrcs371hw2;
 
+import android.content.Intent;
+import android.media.Image;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 
 public class WINNINGPAGE extends ActionBarActivity {
@@ -12,6 +17,16 @@ public class WINNINGPAGE extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_winningpage);
+        ImageButton winButton = (ImageButton)this.findViewById(R.id.winImage);
+        winButton.setBackgroundResource(Game.winTeam.resource);
+        TextView winText = (TextView)this.findViewById(R.id.winTeam);
+        winText.setText(Game.winTeam.getTeamName());
+    }
+    public void goHome(View view)
+    {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     @Override

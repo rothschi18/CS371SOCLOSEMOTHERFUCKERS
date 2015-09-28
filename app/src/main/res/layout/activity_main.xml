@@ -311,7 +311,8 @@
         android:layout_toLeftOf="@+id/button"
         android:layout_toStartOf="@+id/button"
         android:layout_below="@+id/team1Button"
-        android:id="@+id/linearLayout6">
+        android:id="@+id/linearLayout6"
+        android:layout_above="@+id/playGame">
 
         <TextView
             android:layout_width="wrap_content"
@@ -399,5 +400,15 @@
         android:layout_alignLeft="@+id/stats"
         android:layout_alignStart="@+id/stats"
         android:contentDescription="desc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEAM SIZE MUST BE 5 TO PLAY!"
+        android:id="@+id/textView10"
+        android:textSize="25dp"
+        android:layout_alignBottom="@+id/stats"
+        android:layout_alignRight="@+id/playGame"
+        android:layout_alignEnd="@+id/playGame" />
 
 </RelativeLayout>
