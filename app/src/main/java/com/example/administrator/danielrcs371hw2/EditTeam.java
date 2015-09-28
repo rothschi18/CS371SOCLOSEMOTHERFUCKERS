@@ -78,16 +78,12 @@ public class EditTeam extends ActionBarActivity {
         EditText firstName = (EditText)this.findViewById(R.id.firstName);
         EditText lastName  = (EditText)this.findViewById(R.id.newLastName);
         EditText teamName  = (EditText)this.findViewById(R.id.teamName);
+        EditText strength = (EditText)this.findViewById(R.id.strength);
         String key = firstName + " " + lastName;
         ImageView playerImage = new ImageView(this);
+        playerImage.setImageResource(playerImages[counter]);
 
-
-            playerImage.setImageResource(playerImages[counter]);
-
-
-
-
-        PlayerStats newPlayer = new PlayerStats(0, 0, 0, firstName.getText().toString(), lastName.getText().toString(), playerImage, teamName.getText().toString());
+        PlayerStats newPlayer = new PlayerStats(0, Integer.parseInt(strength.getText().toString()), 0, firstName.getText().toString(), lastName.getText().toString(), playerImage, teamName.getText().toString());
         for(String team: MainActivity.TeamData.rosterDatabase.keySet())
         {
 

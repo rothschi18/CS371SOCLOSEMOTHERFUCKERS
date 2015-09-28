@@ -233,21 +233,24 @@
                 android:layout_height="wrap_content"
                 android:text="New Button"
                 android:id="@+id/EditTeam4"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="New Button"
                 android:id="@+id/EditTeam5"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="New Button"
                 android:id="@+id/EditTeam6"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="0dp"
@@ -261,14 +264,16 @@
                 android:layout_height="wrap_content"
                 android:text="New Button"
                 android:id="@+id/EditTeam8"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="New Button"
                 android:id="@+id/EditTeam9"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="0dp"
@@ -282,14 +287,16 @@
                 android:layout_height="wrap_content"
                 android:text="New Button"
                 android:id="@+id/EditTeam11"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="New Button"
                 android:id="@+id/EditTeam12"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="0dp"
@@ -303,7 +310,8 @@
                 android:layout_height="wrap_content"
                 android:text="New Button"
                 android:id="@+id/EditTeam14"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textAllCaps="false"/>
 
             <Button
                 android:layout_width="0dp"
@@ -314,5 +322,31 @@
 
         </LinearLayout>
     </HorizontalScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/horizontalScrollView2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearLayout7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENTER A STRENGTH (Integer)"
+            android:id="@+id/strengthSet"
+            android:layout_weight="0.25"
+            android:textSize="25dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/strength"
+            android:layout_weight="0.41"
+            />
+    </LinearLayout>
 
 </RelativeLayout>
